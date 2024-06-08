@@ -1,13 +1,38 @@
+// import data from "../../../public/fma-data";
+
 // functional component
 import "./Table.css";
 // need name, skillset, votes for each character
 
+// let sortedArray = data.sort((a, b) => {
+//   console.log(a, b);
+//   console.log(b.votes, a.votes);
+//   return b.votes - a.votes;
+// });
+
+// let characterVotes = data.map(
+//   (mapItem) => mapItem
+//   // mapItem.votes
+// );
+// console.log("this is characterVotes", characterVotes);
+// let data = { data };
+// console.log("this is data from table:", data);
+// let sortedArray = data.sort((a, b) => b.votes - a.votes).slice(0, 5);
+
+// let sortedArray = data.sort((a, b) => b - a);
+// console.log("this is sorted array", sortedArray);
+
+// const tableData = data.map((mapItem) => {
+
 export const Table = (data) => {
+  console.log("this is data in the table:", data.data);
   let sortedArray = data.data.sort((a, b) => b.votes - a.votes).slice(0, 5);
+  console.log("this is sorted array", sortedArray);
 
   const tableData = sortedArray.map((mapItem) => {
     // function that chooses every other element, tr class= dark or light
     //function that chooses top 5 votes and orders them
+
     return (
       <tr
         key={mapItem.name}

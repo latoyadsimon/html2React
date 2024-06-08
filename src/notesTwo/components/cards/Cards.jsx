@@ -1,9 +1,12 @@
+// import data from "../../../public/fma-data";
+
 // functional component
 import "./Cards.css";
 
 const Cards = (data) => {
   console.log("this is data in cards:", data.data);
   const makeCards = data.data.map((mapItem) => {
+    //   console.log(mapItem.imageUrl);
     return (
       <div className="card" key={mapItem.name}>
         {/* <!-- Card 1 --> */}

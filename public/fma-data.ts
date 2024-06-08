@@ -1,3 +1,4 @@
+//this is a cleaned version of the data so the urls work
 type Character = {
   name: string;
   skillset: string[];
