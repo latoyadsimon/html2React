@@ -7,7 +7,8 @@ type Character = {
   nickName: null | string;
 };
 
-const data: Character[] = [
+// const data: Character[] = [
+export const data: Character[] = [
   {
     name: "Alex Louis Armstrong",
     nickName: "Major Armstrong",
@@ -98,4 +99,5 @@ const data: Character[] = [
   },
 ];
 
-export default data;
+// export default data;
+// export default {data};

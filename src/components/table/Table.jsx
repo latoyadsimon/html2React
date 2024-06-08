@@ -1,5 +1,7 @@
-import data from "../../../public/fma-data";
-// import "./Table.css";
+// import data from "../../../public/fma-data";
+
+// functional component
+import "./Table.css";
 // need name, skillset, votes for each character
 
 // let sortedArray = data.sort((a, b) => {
@@ -13,63 +15,51 @@ import data from "../../../public/fma-data";
 //   // mapItem.votes
 // );
 // console.log("this is characterVotes", characterVotes);
-let sortedArray = data.sort((a, b) => b.votes - a.votes).slice(0, 5);
+// let data = { data };
+// console.log("this is data from table:", data);
+// let sortedArray = data.sort((a, b) => b.votes - a.votes).slice(0, 5);
 
 // let sortedArray = data.sort((a, b) => b - a);
-console.log("this is sorted array", sortedArray);
+// console.log("this is sorted array", sortedArray);
 
 // const tableData = data.map((mapItem) => {
-const tableData = sortedArray.map((mapItem) => {
-  // function that chooses every other element, tr class= dark or light
-  //function that chooses top 5 votes and orders them
-  // let characterVotes = data.map((mapItem) => {
 
-  //     return(
-  //         [
-  //             mapItem,
-  //             mapItem.votes
-  //         ]
-  //     )
-  // }
-  //     const sortedArray = .sort((a.votes, b.votes) => {
-  //   return b.votes - a.votes;
-  // });
-  //   let MapItems = data.map((mapItems) => mapItems);
-  //   console.log("this is MapItems:", MapItems);
-  //   let sortedArray = mapItem.sort((a, b) => {
-  //     b.votes - a.votes;
-  //   });
+export const Table = (data) => {
+  console.log("this is data in the table:", data.data);
+  let sortedArray = data.data.sort((a, b) => b.votes - a.votes).slice(0, 5);
+  console.log("this is sorted array", sortedArray);
 
-  //   console.log("this is sorted array", sortedArray);
+  const tableData = sortedArray.map((mapItem) => {
+    // function that chooses every other element, tr class= dark or light
+    //function that chooses top 5 votes and orders them
 
-  //return the top 5 characters
+    return (
+      <tr
+        key={mapItem.name}
+        className={data.data.indexOf(mapItem) % 2 === 0 ? "dark" : "light"}
+      >
+        <td>
+          {mapItem.name}{" "}
+          {mapItem.nickName ? '"' + mapItem.nickName + '"' : null}
+        </td>
+        <td>{mapItem.skillset.join(", ")}</td>
+        <td>{mapItem.votes}</td>
+      </tr>
+    );
+  });
 
-  //characters, sorted, sliced to showed the top 5
-
-  return (
-    // {mapItem.sort((a,b)=>{b.votes - a.votes} )}
-    <tr
-      key={mapItem.name}
-      className={data.indexOf(mapItem) % 2 === 0 ? "light" : "dark"}
-    >
-      <td>{mapItem.name}</td>
-      <td>{mapItem.skillset}</td>
-      <td>{mapItem.votes}</td>
-    </tr>
-  );
-});
-
-const Table = () => {
   return (
     <section id="character-ratings">
       <h4>Top Characters</h4>
       <table>
-        <tr>
-          <th>Name</th>
-          <th>Skillset</th>
-          <th>Votes</th>
-        </tr>
-        {tableData}
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Skillset</th>
+            <th>Votes</th>
+          </tr>
+          {tableData}
+        </tbody>
       </table>
     </section>
   );
