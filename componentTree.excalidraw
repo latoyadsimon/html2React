@@ -307,8 +307,8 @@
     },
     {
       "type": "text",
-      "version": 49,
-      "versionNonce": 1458299854,
+      "version": 50,
+      "versionNonce": 786830057,
       "isDeleted": false,
       "id": "m6-ljF92-VUEmEOvVgh0O",
       "fillStyle": "solid",
@@ -333,7 +333,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1717645067735,
+      "updated": 1717825469578,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -348,8 +348,8 @@
     },
     {
       "type": "text",
-      "version": 73,
-      "versionNonce": 1225754642,
+      "version": 74,
+      "versionNonce": 677882919,
       "isDeleted": false,
       "id": "JyEDW_8AR_ngwBSJSXVCu",
       "fillStyle": "solid",
@@ -374,7 +374,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1717645067736,
+      "updated": 1717825469579,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -389,8 +389,8 @@
     },
     {
       "type": "text",
-      "version": 71,
-      "versionNonce": 932854286,
+      "version": 72,
+      "versionNonce": 878038473,
       "isDeleted": false,
       "id": "9w_5t_7MPebzlXby2ZHrS",
       "fillStyle": "solid",
@@ -415,7 +415,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1717645067736,
+      "updated": 1717825469579,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -430,8 +430,8 @@
     },
     {
       "type": "text",
-      "version": 80,
-      "versionNonce": 1372108242,
+      "version": 81,
+      "versionNonce": 1057853255,
       "isDeleted": false,
       "id": "hq98l6rctqR_07J3AMHqh",
       "fillStyle": "solid",
@@ -451,7 +451,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1717645067737,
+      "updated": 1717825469580,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -466,8 +466,8 @@
     },
     {
       "type": "text",
-      "version": 173,
-      "versionNonce": 346277966,
+      "version": 174,
+      "versionNonce": 768289961,
       "isDeleted": false,
       "id": "kC4BSVfV-rxQ9AUCcqwna",
       "fillStyle": "solid",
@@ -487,7 +487,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1717645067738,
+      "updated": 1717825469581,
       "link": null,
       "locked": false,
       "fontSize": 20,

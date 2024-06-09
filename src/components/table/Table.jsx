@@ -3,11 +3,11 @@ import "./Table.css";
 // need name, skillset, votes for each character
 
 export const Table = (data) => {
+  //function that chooses top 5 votes and orders them
   let sortedArray = data.data.sort((a, b) => b.votes - a.votes).slice(0, 5);
 
   const tableData = sortedArray.map((mapItem) => {
     // function that chooses every other element, tr class= dark or light
-    //function that chooses top 5 votes and orders them
     return (
       <tr
         key={mapItem.name}

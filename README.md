@@ -1,3 +1,7 @@
+# My Notes:
+
+I have completed the assignment. These are the instructions we were given.
+
 # Refactor this HTML to React
 
 !WARNING!: There will be alot of copying and pasting on this one. That's ok!
