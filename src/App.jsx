@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Table character={data} />
       {/* <Cards character={data} /> */}
-      <MakeCardsClass character={data} />/
+      <MakeCardsClass character={data} />
     </>
   );
 }
