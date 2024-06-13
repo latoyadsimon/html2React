@@ -7,9 +7,10 @@ import "./Cards.css";
 export class MakeCardsClass extends Component {
   //may need to use this.props
   render() {
-    const { data } = this.props;
+    const { character } = this.props;
+    console.log("this is character in cardsClass:", { character });
 
-    const makeCards = data.map((mapItem) => {
+    const makeCards = character.map((mapItem) => {
       return (
         <div className="card" key={mapItem.name}>
           {/* <!-- Card 1 --> */}

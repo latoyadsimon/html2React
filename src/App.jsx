@@ -11,11 +11,9 @@ function App() {
   return (
     <>
       <Header />
-
-      <Table data={data} />
-
-      {/* <Cards data={data} /> */}
-      <MakeCardsClass data={data} />
+      <Table character={data} />
+      {/* <Cards character={data} /> */}
+      <MakeCardsClass character={data} />/
     </>
   );
 }

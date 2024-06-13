@@ -1,6 +1,8 @@
 # My Notes:
 
-I have completed the assignment. These are the instructions we were given.
+I have completed the assignment. These are the instructions we were given. To open this project in the browser. Open up the terminal and run this set of code:
+npm i
+npm run dev
 
 # Refactor this HTML to React
 

@@ -4,3 +4,4 @@ https://github.com/latoyadsimon/html2React.git
 note to self:
 -Try3 started 06/05/2024
 finished and cleaned 06/08/2024 01:35am
+graded on 06/12/24, passed first try
